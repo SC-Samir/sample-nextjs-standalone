@@ -1,5 +1,5 @@
 # CODEOWNERS Automatic assignment
 
-package-lock.json @SC-Samir
-package.json @SC-Samir
-package.json @SC-Samir
+package-lock.json @scalingo/devrel
+package.json @scalingo/devrel
+package.json @scalingo/devrel
