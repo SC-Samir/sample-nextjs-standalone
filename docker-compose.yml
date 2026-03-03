@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   web:
-    image: "node:20"
+    image: "node:22"
     working_dir: /app
     volumes:
       - .:/app
@@ -12,3 +10,5 @@ services:
       - NODE_ENV=production
       - PORT=${PORT:-3000}
     entrypoint: ["/bin/sh", "/app/entrypoint.sh"]
+    security_opt:
+      - no-new-privileges:true
